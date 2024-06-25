@@ -5,14 +5,32 @@ import java.util.List;
 import java.util.Map;
 
 public class FlowControlExercises {
+    // [1,4,8,,5,]
 
     public List<String> fizzBuzz(List<Integer> numbers) {
+        List<String> result = new ArrayList<String>();
+    
+         //  it creates a list where for each element of the input list ${numbers}
+         for (int i = 0; i < numbers.size(); i++){
+            //- if the ${element} is divisible by both 3 and 5, it adds “FizzBuzz” to the list
+            if (numbers.get(i) % 3 == 0 && numbers.get(i) % 5 == 0){
+                result.add("FizzBuzz");
+            }
+            //if the ${element} is divisible by 3, it adds “Fizz” to the list
+            else if(numbers.get(1) % 3 == 0){
+                result.add("Fizz");
+            }
+            //if the ${element} is divisible by 5, it adds “Buzz” to the list
+            else if (numbers.get(i) % 5 == 0){
+                result.add("Buzz");
+                   //  - it adds the element to the list in any other cas
+            } else {
+            result.add(numbers.get(i).toString());
+          }
+
         // TODO - Implement this method such that
-        //  it creates a list where for each element of the input list ${numbers}
-        //  - if the ${element} is divisible by 3, it adds “Fizz” to the list
-        //  - if the ${element} is divisible by 5, it adds “Buzz” to the list
-        //  - if the ${element} is divisible by both 3 and 5, it adds “FizzBuzz” to the list
-        //  - it adds the element to the list in any other case
+     return result;
+        }
         //  - it returns the constructed list
         throw new RuntimeException("Not implemented");
     }
@@ -45,3 +63,4 @@ public class FlowControlExercises {
         return "Flow Control Exercises";
     }
 }
+
