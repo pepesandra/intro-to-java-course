@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<form>
+    <div>
+        <label>Email</label>
+  <input type="email" id="email" name="email" placeholder="mailto:example@gmail.com"/>
+  
+    <label>Password</label>
+  <input type="password" value="FakePSW" id="myInput">
+  <input type="checkbox" onclick="myFunction()">
+  
+  
+  
+  <br></br>
+  
+  
+  <input type="checkbox">Remember me      <button>forgot password</button>
+  
+  <br></br>
+    <button>Submit</button>
+  
+  
+   <script>
+  function myFunction() {
+    var x = document.getElementById("myInput");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+  </script>
+  
+    </div>
+  </form>
+  </html>
